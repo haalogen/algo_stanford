@@ -2,12 +2,17 @@
 import sys
 import random
 import time
+import math
+
+def dist(p, q):
+#    Euclidian 2D distance between points p(x1, y1) and q(x2, y2)
+    return math.sqrt( (p[0]-q[0])**2 + (p[1]-q[1])**2 )
 
 # BruteForce algorithm of Closest Pair
 def naive_closest_pair(p):
     
     
-    return [-228, -228]
+    return [[-228, -228], [228, 228]]
 
 
 
@@ -15,7 +20,7 @@ def naive_closest_pair(p):
 def recursive_closest_pair(p):
     
     
-    return [228, 228]
+    return [[228, 228], [-228, -228]]
 
 
 
